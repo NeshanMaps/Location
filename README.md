@@ -43,7 +43,7 @@
   
     dependencies {
         ...
-    implementation 'com.github.NeshanMaps:Location:1.0.0'
+   	 implementation 'com.github.NeshanMaps:Location:1.0.0'
       }
   
   ```
