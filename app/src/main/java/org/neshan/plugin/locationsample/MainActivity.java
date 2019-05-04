@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements NeshanLocation.On
                     @RequiresPermission(anyOf = {"android.permission.ACCESS_FINE_LOCATION"})
                     public void onPermissionGranted(PermissionGrantedResponse response) {
                        // neshanLocation.startAutoLocationUpdate(6000);
-                        neshanLocation.getCurrentLocation();
+                        neshanLocation.startAutoLocationUpdate(6000);
                     }
 
                     @Override
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements NeshanLocation.On
     @Override
     public void onLocationReceived(Location location) {
         Log.i(TAG, "onLocationReceived: ");
-        map.setFocalPointPosition(new LngLat(location.getLongitude(), location.getLatitude()), 0.5f);
+         map.setFocalPointPosition(new LngLat(location.getLongitude(), location.getLatitude()), 0.5f);
     }
 
     @Override

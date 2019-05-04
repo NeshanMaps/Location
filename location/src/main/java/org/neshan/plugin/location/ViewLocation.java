@@ -129,7 +129,8 @@ public class ViewLocation {
         double srcLat = srcLngLat.getY() * PI_RAD;
         double srcLng = srcLngLat.getX() * PI_RAD;
         bearing = bearing * PI_RAD;
-        d = d / 1000.0;
+        //d = d / 1000.0;
+        d= 3000/1000.0;
         double destLat = Math.asin(Math.sin(srcLat) * Math.cos(d / R) +
                 Math.cos(srcLat) * Math.sin(d / R) * Math.cos(bearing));
         double destLng = srcLng + Math.atan2(Math.sin(bearing) * Math.sin(d / R) * Math.cos(srcLat),
