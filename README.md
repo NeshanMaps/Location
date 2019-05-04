@@ -144,6 +144,9 @@
      void setCircleVisible(boolean visible)
      void setMarkerMode(MarkerOrientation markerMode)
      void setRippleEnable(boolean enable)
+     void setRippleOneFillColor(int color)
+     void setRippleTwoFillColor(int color) 
+    
 
   ```
   
